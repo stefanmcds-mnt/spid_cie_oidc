@@ -1,0 +1,15 @@
+FOR github
+
+echo "# spid_cie_oidc" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/stefanmcds-mnt/spid_cie_oidc.git
+git push -u origin master
+
+or
+
+git remote add origin https://github.com/stefanmcds-mnt/spid_cie_oidc.git
+git branch -M master
+git push -u origin master

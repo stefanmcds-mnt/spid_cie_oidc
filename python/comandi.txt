@@ -1,0 +1,9 @@
+
+FOR docker hub
+
+docker login --username stefanmcds --password @S18ef112-01
+docker build -t stefanmcds/spid-cie-oidc-django .
+
+docker image tag stefanmcds/spid-cie-oidc-django:latest stefanmcds/spid-cie-oidc-django:latest
+
+docker image push stefanmcds/spid-cie-oidc-django:latest

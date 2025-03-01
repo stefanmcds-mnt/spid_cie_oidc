@@ -1,0 +1,89 @@
+#version: "3"
+
+services:
+  trust-anchor.org:
+    image: ghcr.io/italia/spid-cie-oidc-django:latest
+    #image: stefanmcds/spid-cie-oidc-django
+    #build:
+    #  context: .
+    #  dockerfile: ./Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./examples-docker/federation_authority/:/django-project
+      #- ./examples/federation_authority/:/django-project
+    networks:
+      - oidcfed
+    command: |
+        bash -c "cd /django-project &&
+        python3 manage.py migrate &&
+        python3 manage.py loaddata dumps/example.json &&
+        python3 manage.py runserver 0.0.0.0:8000"
+
+  cie-provider.org:
+    image: ghcr.io/italia/spid-cie-oidc-django:latest
+    #image: stefanmcds/spid-cie-oidc-django
+    #build:
+    #  context: .
+    #  dockerfile: ./Dockerfile
+    expose:
+      - 8002
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./examples-docker/provider/:/django-project
+      #- ./examples/provider/:/django-project
+    networks:
+      - oidcfed
+    depends_on:
+      - trust-anchor.org
+    command: |
+        bash -c "cd /django-project &&
+        python3 manage.py migrate &&
+        python3 manage.py loaddata dumps/example.json &&
+        python3 manage.py runserver 0.0.0.0:8002"
+
+  relying-party.org:
+    image: ghcr.io/italia/spid-cie-oidc-django:latest
+    #image: stefanmcds/spid-cie-oidc-django
+    #build:
+    #  context: .
+    #  dockerfile: ./Dockerfile
+    expose:
+      - 8001
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./examples-docker/relying_party/:/django-project
+      #- ./examples/relying_party/:/django-project
+    networks:
+      - oidcfed
+    depends_on:
+      - trust-anchor.org
+    command: |
+        bash -c "cd /django-project &&
+        python3 manage.py migrate &&
+        python3 manage.py loaddata dumps/example.json &&
+        python3 manage.py runserver 0.0.0.0:8001"
+
+  wallet.trust-anchor.org:
+    image: ghcr.io/italia/spid-cie-oidc-django:latest
+    #image: stefanmcds/spid-cie-oidc-django
+    #build:
+    #  context: .
+    #  dockerfile: ./Dockerfile
+    ports:
+      - "8005:8005"
+    volumes:
+      - ./examples-docker/wallet_trust_anchor/:/django-project
+    #  - ./examples/wallet_trust_anchor/:/django-project
+    networks:
+      - oidcfed
+    command: |
+        bash -c "cd /django-project &&
+        python3 manage.py migrate &&
+        python3 manage.py loaddata dumps/ta-ec.json &&
+        python3 manage.py runserver 0.0.0.0:8005"
+
+networks:
+  oidcfed:
