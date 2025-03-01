@@ -9,6 +9,7 @@ COPY . /opt/
 RUN ls -al .
 RUN pip3 install --upgrade pip
 RUN pip3 install -e .
+RUN pip3 install "djagger @ git+https://github.com/stefanmcds-mnt/djagger"
 RUN pip3 install "design-django-theme"
 
 #
