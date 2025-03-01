@@ -18,7 +18,7 @@ INSTALL_REQUIRES = [
     "requests",
     "pydantic[email]",
     #"djagger",
-    "djagger@git+https://github.com/stefanmcds-mnt/djagger",
+    "djagger @ git+https://github.com/stefanmcds-mnt/djagger",
 ]
 
 with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8') as readme:
