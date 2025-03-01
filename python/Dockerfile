@@ -1,5 +1,4 @@
 # syntax=docker/dockerfile:1
-#FROM python:3.10-slim
 FROM python:latest
 LABEL Author="STEFAN MCDS S.a.s. <info@stefan-mcds.it>"
 ENV PYTHONDONTWRITEBYTECODE=1
