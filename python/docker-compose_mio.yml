@@ -1,5 +1,5 @@
 #version: "3"
-
+name: "spid-cie-oidc-django"
 services:
   trust-anchor.org:
     #image: ghcr.io/italia/spid-cie-oidc-django:latest

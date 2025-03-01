@@ -10,7 +10,6 @@ COPY . /opt/
 RUN ls -al .
 RUN pip3 install --upgrade pip
 RUN pip3 install -e .
-#RUN pip3 install "design-django-theme==v1.4.8"
 RUN pip3 install "design-django-theme"
 
 # let compose do this
