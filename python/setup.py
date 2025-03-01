@@ -13,10 +13,11 @@ INSTALL_REQUIRES = [
     "Django",
     "cryptojwt",
     "pydantic",
+    #"pydantic[email]",
     "pytz",
     "aiohttp",
     "requests",
-    "pydantic[email]",
+    "djangorestframework",
     #"djagger",
     "djagger @ git+https://github.com/stefanmcds-mnt/djagger",
 ]
