@@ -18,6 +18,7 @@ INSTALL_REQUIRES = [
     "aiohttp",
     "requests",
     "djangorestframework",
+    "openapi"
     #"djagger",
     #"djagger @ git+https://github.com/stefanmcds-mnt/djagger",
 ]
