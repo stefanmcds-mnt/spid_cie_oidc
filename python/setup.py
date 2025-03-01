@@ -13,7 +13,7 @@ INSTALL_REQUIRES = [
     "Django",
     "cryptojwt",
     "pydantic",
-    #"pydantic[email]",
+    "pydantic[email]",
     "pytz",
     "aiohttp",
     "requests",

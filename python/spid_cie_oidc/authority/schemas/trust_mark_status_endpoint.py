@@ -9,7 +9,7 @@ class TrustMarkRequest(BaseModel):
     id : Optional[HttpUrl]
 
     #@validator("id", pre=True, always=True)
-    @field_validator("id", pre=True, always=True)
+    @field_validator("id")
     def validate_id(cls, id_value, values):
         if (not values.get("trust_mark") and (not values.get("sub") or not id_value)):
             raise ValueError("sub an id must be present if not trust_mark")
