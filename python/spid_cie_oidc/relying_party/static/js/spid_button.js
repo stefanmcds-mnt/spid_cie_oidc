@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     var rootList = $("#spid-idp-list-small-root-get");
     var idpList = rootList.children(".spid-idp-button-link");
     var lnkList = rootList.children(".spid-idp-support-link");
@@ -7,7 +7,7 @@ $(document).ready(function(){
     }
     rootList.append(lnkList);
 });
-$(document).ready(function(){
+$(document).ready(function () {
     var rootList = $("#spid-idp-list-medium-root-get");
     var idpList = rootList.children(".spid-idp-button-link");
     var lnkList = rootList.children(".spid-idp-support-link");
@@ -16,7 +16,7 @@ $(document).ready(function(){
     }
     rootList.append(lnkList);
 });
-$(document).ready(function(){
+$(document).ready(function () {
     var rootList = $("#cie-idp-list-medium-root-get");
     var idpList = rootList.children(".cie-idp-button-link");
     var lnkList = rootList.children(".cie-idp-support-link");
@@ -25,7 +25,7 @@ $(document).ready(function(){
     }
     rootList.append(lnkList);
 });
-$(document).ready(function(){
+$(document).ready(function () {
     var rootList = $("#spid-idp-list-large-root-get");
     var idpList = rootList.children(".spid-idp-button-link");
     var lnkList = rootList.children(".spid-idp-support-link");
@@ -34,7 +34,7 @@ $(document).ready(function(){
     }
     rootList.append(lnkList);
 });
-$(document).ready(function(){
+$(document).ready(function () {
     var rootList = $("#spid-idp-list-xlarge-root-get");
     var idpList = rootList.children(".spid-idp-button-link");
     var lnkList = rootList.children(".spid-idp-support-link");
@@ -43,7 +43,7 @@ $(document).ready(function(){
     }
     rootList.append(lnkList);
 });
-$(document).ready(function(){
+$(document).ready(function () {
     var rootList = $("#spid-idp-list-small-root-post");
     var idpList = rootList.children(".spid-idp-button-link");
     var lnkList = rootList.children(".spid-idp-support-link");
@@ -52,7 +52,7 @@ $(document).ready(function(){
     }
     rootList.append(lnkList);
 });
-$(document).ready(function(){
+$(document).ready(function () {
     var rootList = $("#spid-idp-list-medium-root-post");
     var idpList = rootList.children(".spid-idp-button-link");
     var lnkList = rootList.children(".spid-idp-support-link");
@@ -61,7 +61,7 @@ $(document).ready(function(){
     }
     rootList.append(lnkList);
 });
-$(document).ready(function(){
+$(document).ready(function () {
     var rootList = $("#spid-idp-list-large-root-post");
     var idpList = rootList.children(".spid-idp-button-link");
     var lnkList = rootList.children(".spid-idp-support-link");
@@ -70,7 +70,7 @@ $(document).ready(function(){
     }
     rootList.append(lnkList);
 });
-$(document).ready(function(){
+$(document).ready(function () {
     var rootList = $("#spid-idp-list-xlarge-root-post");
     var idpList = rootList.children(".spid-idp-button-link");
     var lnkList = rootList.children(".spid-idp-support-link");
