@@ -1,3 +1,4 @@
+/*
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600);
 .italia-it-button {
     display: inline-block;
@@ -12,7 +13,7 @@
     text-align: center;
     cursor: pointer;
     overflow: hidden;
-    border-radius: 15px;     
+    border-radius: 15px;
 }
 
 .italia-it-button-icon,
@@ -46,7 +47,7 @@ svg {
 .italia-it-button-size-s {
     font-size: 10px;
     width: 150px;
-    border-radius: 5px;    
+    border-radius: 5px;
 }
 
 .italia-it-button-size-s > span img {
@@ -58,7 +59,7 @@ svg {
 .italia-it-button-size-m {
     font-size: 15px;
     width: 220px;
-    border-radius: 0px;    
+    border-radius: 0px;
 }
 
 .italia-it-button-size-m > span img {
@@ -80,7 +81,7 @@ svg {
 
 .italia-it-button-size-xl {
     font-size: 24px;
-    width: 340px;    
+    width: 340px;
 }
 
 .italia-it-button-size-xl > span img {
@@ -220,7 +221,7 @@ svg {
     font-family: "Titillium Web", HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
     font-weight: 600;
     font-size: .9em;
-    color: #3b61b6; 
+    color: #3b61b6;
     text-decoration: underline;
     line-height: 18px;
     padding-top: 5px;
@@ -290,7 +291,7 @@ svg {
     clip: rect(0, 0, 0, 0);
     border: 0
 }
-
+*/
 .cie-idp-button {
     position: absolute;
     z-index: 1039;
@@ -378,13 +379,13 @@ svg {
     line-height: 18px
 }
 
-.cie-idp-button .cie-idp-button-menu li > a,
+.cie-idp-button .cie-idp-button-menu li>a,
 .cie-idp-button .cie-idp-button-menu label {
     display: block;
     font-family: "Titillium Web", HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
     font-weight: 600;
     font-size: .9em;
-    color: #3b61b6; 
+    color: #3b61b6;
     text-decoration: underline;
     line-height: 18px;
     padding-top: 5px;
@@ -392,22 +393,16 @@ svg {
     border-bottom: 1px solid #ddd;
 }
 
-.cie-idp-button .cie-idp-button-menu li > a:hover,
+.cie-idp-button .cie-idp-button-menu li>a:hover,
 .cie-idp-button .cie-idp-button-menu label:hover {
     color: #036;
     cursor: pointer;
     background-color: #F0F0F0
 }
 
-.cie-idp-button .cie-idp-button-menu li > a img {
+.cie-idp-button .cie-idp-button-menu li>a img {
     height: 35px;
     padding-bottom: 5px;
     border: 0;
     width: 30%;
 }
-
-
-
-
-
-
