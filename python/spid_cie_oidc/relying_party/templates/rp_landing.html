@@ -41,18 +41,19 @@
                             top: 46.05px">
                     <ul id="spid-idp-list-medium-root-get"
                         class="spid-idp-button-menu"
-                        aria-labelledby="spid-idp">
-                        <li>
+                        aria-labelledby="spid-idp"
+                        data-spid-remote>
+                        <li class="spid-idp-button-link">
                             <a class="dropdown-item" href="https://www.spid.gov.it">Maggiori informazioni</a>
                         </li>
-                        <li>
+                        <li class="spid-idp-button-link">
                             <a class="dropdown-item" href="https://www.spid.gov.it/richiedi-spid">Non hai SPID?</a>
                         </li>
-                        <li>
+                        <li class="spid-idp-button-link">
                             <a class="dropdown-item" href="https://www.spid.gov.it/serve-aiuto">Serve aiuto?</a>
                         </li>
                         {% for sub, attrs in spid_providers.items %}
-                            <li>
+                            <li class="spid-idp-button-link">
                                 <a href="{% url 'spid_cie_rp_begin' %}?provider={{ sub }}&profile=spid"
                                    id="provider-spid">
                                     <span class="spid-sr-only">{{ attrs.organization_name }}</span>
@@ -64,7 +65,7 @@
                                     {% endif %}
                                 </a>
                             </li>
-                            <li>
+                            <li class="spid-idp-button-link">
                                 <a href="{% url 'spid_cie_rp_begin' %}?provider={{ sub }}&profile=spid&scope=openid offline_access"
                                    id="provider-spid-refresh_token">
                                     <span class="spid-sr-only">{{ attrs.organization_name }}</span>
@@ -78,11 +79,6 @@
                                 </a>
                             </li>
                         {% endfor %}
-                        <ul id="spid-idp-list-medium-root-get"
-                            class="spid-idp-button-menu"
-                            aria-labelledby="spid-idp"
-                            data-spid-remote>
-                        </ul>
                     </div>
                 </span>
                 <span class="badge square-corners mb-3 mr-2 ml-0 pr-10 p-2 mw-100"
