@@ -5,23 +5,23 @@ LABEL Maintainer="Michele Damico <michele.damico@linfaservice.it>"
 LABEL Description="spid-cie-oidc-php"
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV DEBCONF_NOWARNINGS=yes 
+ENV DEBCONF_NOWARNINGS=yes
 
 # Install apache and php7
 RUN \
     apt-get update && \
     apt-get -yq install \
-        curl \
-        git \
-        apache2 \
-        libapache2-mod-php \
-        php-sqlite3 \
-        php-gmp \
-        php-mbstring \
-        php-curl \
-        php-xml \
-        php-zip
-    
+    curl \
+    git \
+    apache2 \
+    libapache2-mod-php \
+    php-sqlite3 \
+    php-gmp \
+    php-mbstring \
+    php-curl \
+    php-xml \
+    php-zip
+
 # config PHP
 # we want a dev server which shows PHP errors
 RUN sed -i -e 's/^error_reporting\s*=.*/error_reporting = E_ALL/' /etc/php/7.4/apache2/php.ini
@@ -55,7 +55,7 @@ RUN cd /var/www && \
 # RUN apt-get clean && apt-get autoremove -y
 
 #change working directory to root
-WORKDIR var/www/spid-cie-oidc-php
+WORKDIR /var/www/spid-cie-oidc-php
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www
