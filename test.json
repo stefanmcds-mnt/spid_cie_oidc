@@ -1,0 +1,57 @@
+{
+    "federation_entity": {
+        "federation_resolve_endpoint": "http://trust-anchor.org:8000/oidc/rp/resolve",
+        "organization_name": "STEFAN MCDS S.a.s. - SPID",
+        "homepage_uri": "http://trust-anchor.org:8000",
+        "policy_uri": "http://trust-anchor.org:8000/oidc/rp/en/website/legal-information",
+        "logo_uri": "http://trust-anchor.org:8000/static/svg/spid-logo-c-lb.svg",
+        "contacts": [
+            "stefanmcds-reg@stedns.it"
+        ]
+    },
+    "openid_relying_party": {
+        "organization_name": "STEFAN MCDS S.a.s. - SPID",
+        "application_type": "web",
+        "client_id": "http://trust-anchor.org:8000/oidc/rp",
+        "client_registration_types": [
+            "automatic"
+        ],
+        "jwks": {
+            "keys": [
+                {
+                    "use": "sig",
+                    "alg": "RS256",
+                    "kty": "RSA",
+                    "n": "5s4qi1Ta-sEuKb5rJ8TzHmyGKaSu89pIXIi6w4Ekx6GL56mJDNE_MWJHsFjWXajfMdMQmZrSXAvLtXxmbhUui9Mq_IormhmEyyEJS0SyE9UKTxWzi0yd_n_C7OjFBhM-0ZyUlgl81E_sr-35P1A6b5WSYwMvRSR-P9yx_NI-XBQ48G_zdmk3CbuuzZsXZqqgj5U7OGWH-4Huosn9nH3FVkwX0OlWkgWM-J9DEWzGBjl9hfbbrMtM_obljHL2NfT6RJYER2IpdI8RCyQS3sMPt6ZHDskmuNlyMDNATCChXQJLnltwEjxcgvzjw_G9J25DwfdfVEhDF_0kCp44UMmS3Q",
+                    "e": "AQAB",
+                    "kid": "2HnoFS3YnC9tjiCaivhWLVUJ3AxwGGz_98uRFaqMEEs"
+                },
+                {
+                    "use": "enc",
+                    "kty": "RSA",
+                    "e": "AQAB",
+                    "alg": "RSA-OAEP",
+                    "n": "oP1EPjcPOtV7Zog2suguY-tCLUVWSe2DOAHqlEWeDJtuQ1sO99Ue_5-Zbdm7iUmA2JNoCKZhp3RpICxRy01PsmXVm5UhsiYvHwK4vYq8hJRgtNpci3Gwj4YzpsN1p2un1VbvtAgiSN5wXURWyaMPMDuOMhIPIleaXU0wHcmGeXEuJrVPluz2jbqYhUHkAlySsH8-3Tx9VIjYohkiaSGU43XIYgCDL3mDkt7u3Z5w009vsNu1XhVZ7SE_XhkOzcvnA82NSq04ogwZ_oAyBY8nYMIN0irxR9r8NssGR3OZxqUMwvElqpyWt2NthgvS0GkMrgirQig-rvJ5bldlBkgOWQ",
+                    "kid": "m1-4Lr9DqAh5-UXYvQnacFiMSrPMaXfK0cfFmCxVvI8"
+                }
+            ]
+        },
+        "jwks_uri": "http://trust-anchor.org:8000/oidc/rp/openid_relying_party/jwks.json",
+        "signed_jwks_uri": "http://trust-anchor.org:8000/oidc/rp/openid_relying_party/jwks.jose",
+        "client_name": "STEFAN MCDS S.a.s. - SPID",
+        "contacts": [
+            "stefanmcds-reg@stedns.it"
+        ],
+        "grant_types": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "redirect_uris": [
+            "http://trust-anchor.org:8000/oidc/rp/callback"
+        ],
+        "response_types": [
+            "code"
+        ],
+        "subject_type": "pairwise"
+    }
+}
