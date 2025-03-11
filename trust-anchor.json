@@ -1,0 +1,37 @@
+{
+    "entity_type": "federation_entity",
+    "sub": "http://trust-anchor.org:8000",
+    "authority_hints": [],
+    "trust_marks": [],
+    "trust_mark_issuers": {
+        "https://www.spid.gov.it/certification/rp/public": [
+            "https://registry.spid.agid.gov.it",
+            "https://public.intermediary.spid.it"
+        ],
+        "https://www.spid.gov.it/certification/rp/private": [
+            "https://registry.spid.agid.gov.it",
+            "https://private.other.intermediary.it"
+        ],
+        "https://sgd.aa.it/onboarding": [
+            "https://sgd.aa.it"
+        ]
+    },
+    "constraints": {
+        "max_path_length": 1
+    },
+    "metadata": {
+        "federation_entity": {
+            "organization_name": "STEFAN MCDS S.a.s.",
+            "homepage_uri": "http://trust-anchor.org:8000",
+            "policy_uri": "http://trust-anchor.org:8000/en/website/legal-information",
+            "logo_uri": "http://trust-anchor.org:8000/static/svg/spid-logo-c-lb.svg",
+            "contacts": [
+                "stefanmcds-reg@postecert.it"
+            ],
+            "federation_fetch_endpoint": "http://trust-anchor.org:8000/fetch",
+            "federation_list_endpoint": "http://trust-anchor.org:8000/list",
+            "federation_trust_mark_status_endpoint": "http://trust-anchor.org:8000/trust_mark_status",
+            "federation_resolve_endpoint": "http://trust-anchor.org:8000/resolve"
+        }
+    }
+}

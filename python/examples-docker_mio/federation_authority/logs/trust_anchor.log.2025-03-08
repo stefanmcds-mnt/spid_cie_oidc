@@ -1,0 +1,9 @@
+2025-03-08 21:46:23,968 spid_cie_oidc.entity.statements INFO     Starting Entity Configuration Request for http://trust-anchor.org:8000/.well-known/openid-federation
+2025-03-08 21:46:24,055 spid_cie_oidc.entity.statements INFO     Starting Entity Configuration Request for http://trust-anchor.org:8000/oidc/op/.well-known/openid-federation
+2025-03-08 21:46:24,066 spid_cie_oidc.entity.trust_chain ERROR    Entity Configuration for http://trust-anchor.org:8000/oidc/op failed: Expecting value: line 1 column 1 (char 0)
+2025-03-08 21:46:24,066 spid_cie_oidc.entity.trust_chain ERROR    ['Entity Configuration for http://trust-anchor.org:8000/oidc/op failed: Expecting value: line 1 column 1 (char 0)']
+2025-03-08 21:46:24,067 spid_cie_oidc.relying_party.views.rp_landing WARNING  Failed trust chain for http://trust-anchor.org:8000/oidc/op to {'sub': 'http://trust-anchor.org:8000'}: ['Entity Configuration for http://trust-anchor.org:8000/oidc/op failed: Expecting value: line 1 column 1 (char 0)']
+2025-03-08 21:46:24,071 spid_cie_oidc.entity.statements INFO     Starting Entity Configuration Request for http://cie-provider.org:8002/oidc/op/.well-known/openid-federation
+2025-03-08 21:46:24,085 spid_cie_oidc.entity.trust_chain ERROR    Entity Configuration for http://cie-provider.org:8002/oidc/op failed: Expecting value: line 1 column 1 (char 0)
+2025-03-08 21:46:24,085 spid_cie_oidc.entity.trust_chain ERROR    ['Entity Configuration for http://cie-provider.org:8002/oidc/op failed: Expecting value: line 1 column 1 (char 0)']
+2025-03-08 21:46:24,086 spid_cie_oidc.relying_party.views.rp_landing WARNING  Failed trust chain for http://cie-provider.org:8002/oidc/op to {'sub': 'http://trust-anchor.org:8000'}: ['Entity Configuration for http://cie-provider.org:8002/oidc/op failed: Expecting value: line 1 column 1 (char 0)']

@@ -1,0 +1,74 @@
+{
+    "entity_type": "federation_entity,openid_relying_party",
+    "sub": "http://trust-anchor.org:8000/oidc/rp",
+    "authority_hints": [
+        "http://trust-anchor.org:8000"
+    ],
+    "trust_marks": [
+        {
+            "id": "https://www.spid.gov.it/openid-federation/agreement/sp-public",
+            "trust_mark": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkZpZll4MDNibm9zRDhtNmdZUUlmTkhOUDljTV9TYW05VGM1bkxsb0lJcmMifQ.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvIiwic3ViIjoiaHR0cDovLzEyNy4wLjAuMTo4MDAwL29pZGMvcnAvIiwiaWF0IjoxNjQ1NjEyNDAxLCJpZCI6Imh0dHBzOi8vd3d3LnNwaWQuZ292Lml0L2NlcnRpZmljYXRpb24vcnAiLCJtYXJrIjoiaHR0cHM6Ly93d3cuYWdpZC5nb3YuaXQvdGhlbWVzL2N1c3RvbS9hZ2lkL2xvZ28uc3ZnIiwicmVmIjoiaHR0cHM6Ly9kb2NzLml0YWxpYS5pdC9pdGFsaWEvc3BpZC9zcGlkLXJlZ29sZS10ZWNuaWNoZS1vaWRjL2l0L3N0YWJpbGUvaW5kZXguaHRtbCJ9.mSPNR0AOPBn3UNJAIbrWUMQ8vGTetQajpa3i59JDKDXYWqo2TUGh4AQBghCiG3qqV9cl-hleLtuwoeZ1InKHeslTLftVdcR3meeMLs3mLobHYr26Mi7pC7-jx1ZFVyk4GXl7mn9WVSQGEUOiuhL01tdlUfxf0TJSFSOMEZGpCA3hXroLOnEl3FjkAw7sPvjfImsbadbHVusb72HTTs1n5Xo7z3As3fDWHcxD-fvvq0beu9cx-L2sT4YaNC-ELd1M3m5r0NIjjEUAt4Gnot-l5Z3-C_bA41uvh2hX34U_fGZ6jpmuluJo1Lqi26N8LTB-Rbu0UMaZnkRg9E72_YRZig"
+        }
+    ],
+    "trust_mark_issuers": {},
+    "constraints": {},
+    "metadata": {
+        "federation_entity": {
+            "federation_resolve_endpoint": "http://trust-anchor.org:8000/oidc/rp/resolve",
+            "organization_name": "STEFAN MCDS S.a.s. RP",
+            "homepage_uri": "http://trust-anchor.org:8000",
+            "policy_uri": "http://trust-anchor.org:8000/oidc/rp/en/website/legal-information",
+            "logo_uri": "http://trust-anchor.org:8000/static/svg/spid-logo-c-lb.svg",
+            "contacts": [
+                "ops@rp.example.it",
+                "stefanmcds-reg@stedns.it"
+            ]
+        },
+        "openid_relying_party": {
+            "organization_name": "STEFAN MCDS S.a.s. RP",
+            "application_type": "web",
+            "client_id": "http://trust-anchor.org:8000/oidc/rp",
+            "client_registration_types": [
+                "automatic"
+            ],
+            "jwks": {
+                "keys": [
+                    {
+                        "use": "sig",
+                        "alg": "RS256",
+                        "kty": "RSA",
+                        "n": "5s4qi1Ta-sEuKb5rJ8TzHmyGKaSu89pIXIi6w4Ekx6GL56mJDNE_MWJHsFjWXajfMdMQmZrSXAvLtXxmbhUui9Mq_IormhmEyyEJS0SyE9UKTxWzi0yd_n_C7OjFBhM-0ZyUlgl81E_sr-35P1A6b5WSYwMvRSR-P9yx_NI-XBQ48G_zdmk3CbuuzZsXZqqgj5U7OGWH-4Huosn9nH3FVkwX0OlWkgWM-J9DEWzGBjl9hfbbrMtM_obljHL2NfT6RJYER2IpdI8RCyQS3sMPt6ZHDskmuNlyMDNATCChXQJLnltwEjxcgvzjw_G9J25DwfdfVEhDF_0kCp44UMmS3Q",
+                        "e": "AQAB",
+                        "kid": "2HnoFS3YnC9tjiCaivhWLVUJ3AxwGGz_98uRFaqMEEs"
+                    },
+                    {
+                        "use": "enc",
+                        "kty": "RSA",
+                        "e": "AQAB",
+                        "alg": "RSA-OAEP",
+                        "n": "oP1EPjcPOtV7Zog2suguY-tCLUVWSe2DOAHqlEWeDJtuQ1sO99Ue_5-Zbdm7iUmA2JNoCKZhp3RpICxRy01PsmXVm5UhsiYvHwK4vYq8hJRgtNpci3Gwj4YzpsN1p2un1VbvtAgiSN5wXURWyaMPMDuOMhIPIleaXU0wHcmGeXEuJrVPluz2jbqYhUHkAlySsH8-3Tx9VIjYohkiaSGU43XIYgCDL3mDkt7u3Z5w009vsNu1XhVZ7SE_XhkOzcvnA82NSq04ogwZ_oAyBY8nYMIN0irxR9r8NssGR3OZxqUMwvElqpyWt2NthgvS0GkMrgirQig-rvJ5bldlBkgOWQ",
+                        "kid": "m1-4Lr9DqAh5-UXYvQnacFiMSrPMaXfK0cfFmCxVvI8"
+                    }
+                ]
+            },
+            "jwks_uri": "http://trust-anchor.org:8000/oidc/rp/openid_relying_party/jwks.json",
+            "signed_jwks_uri": "http://trust-anchor.org:8000/oidc/rp/openid_relying_party/jwks.jose",
+            "client_name": "STEFAN MCDS S.a.s.",
+            "contacts": [
+                "ops@rp.example.it",
+                "stefanmcds-reg@stedns.it"
+            ],
+            "grant_types": [
+                "refresh_token",
+                "authorization_code"
+            ],
+            "redirect_uris": [
+                "http://trust-anchor.org:8000/oidc/rp/callback"
+            ],
+            "response_types": [
+                "code"
+            ],
+            "subject_type": "pairwise"
+        }
+    }
+}

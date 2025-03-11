@@ -1,0 +1,7 @@
+2025-03-06 15:23:46,063 spid_cie_oidc.entity.statements INFO     Starting Entity Configuration Request for http://trust-anchor.org:8000/.well-known/openid-federation
+2025-03-06 15:23:46,178 spid_cie_oidc.entity.statements INFO     Starting Entity Configuration Request for http://trust-anchor.org:8000/oidc/rp/.well-known/openid-federation
+2025-03-06 15:23:46,268 spid_cie_oidc.entity.trust_chain INFO     Starting a Walk into Metadata Discovery for http://trust-anchor.org:8000/oidc/rp
+2025-03-06 15:23:46,268 spid_cie_oidc.entity.statements INFO     Getting Cached Entity Configurations for ['http://trust-anchor.org:8000']
+2025-03-06 15:23:46,270 spid_cie_oidc.entity.statements INFO     Getting entity statements from http://trust-anchor.org:8000/fetch?sub=http://trust-anchor.org:8000/oidc/rp
+2025-03-06 15:23:46,493 spid_cie_oidc.entity.trust_chain INFO     Applying metadata policy for http://trust-anchor.org:8000/oidc/rp over http://trust-anchor.org:8000 starting from http://trust-anchor.org:8000/oidc/rp valid True
+2025-03-06 15:23:46,494 spid_cie_oidc.entity.trust_chain INFO     Found a trust path: [http://trust-anchor.org:8000/oidc/rp valid True, http://trust-anchor.org:8000 valid True]
